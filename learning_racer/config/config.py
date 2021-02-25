@@ -77,6 +77,10 @@ class ConfigReader:
     def sac_sde_sample_freq(self):
         return self.sac.get('SDE_SAMPLE_FREQ', 64)
 
+    def sac_sample_freq(self):
+        return self.sac.get('SAC_SAMPLE_FREQ', 64)
+
+
     def reward_reward_crash(self):
         return self.reward.get('REWARD_CRASH')
 
